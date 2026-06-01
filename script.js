@@ -11,3 +11,4 @@ const products = [
   const productsUnder200 = products.filter(function (product) {
     return product.price < 200;
   });
+  console.log("productsUnder200:", productsUnder200);
