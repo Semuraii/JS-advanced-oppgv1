@@ -36,3 +36,4 @@ const products = [
 const totalPrice = products.reduce(function (accumulator, product) {
     return accumulator + product.price;
   }, 0);
+    console.log("totalPrice:", totalPrice);
