@@ -12,3 +12,7 @@ const products = [
     return product.price < 200;
   });
   console.log("productsUnder200:", productsUnder200);
+
+  const productNames = products.map(function (product) {
+    return product.name;
+  }
