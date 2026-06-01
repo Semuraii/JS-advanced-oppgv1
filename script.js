@@ -8,31 +8,43 @@ const products = [
     { name: "Sneakers", price: 300, category: "clothing" }
   ];
 
+
+// Produkter under 200kr
   const productsUnder200 = products.filter(function (product) {
     return product.price < 200;
   });
   console.log("productsUnder200:", productsUnder200);
 
+
+// Navn på alle produkter
   const productNames = products.map(function (product) {
     return product.name;
   });
   console.log("productNames:", productNames);
 
+
+//Filtrerer ut "electronics"
   const electronicsProducts = products.filter(function (product) {
     return product.category === "electronics";
   });
   console.log("electronicsProducts:", electronicsProducts);
 
+  
+//Navn på alle "electronics"
   const electronicsNames = electronicsProducts.map(function (product) {
     return product.name;
   });
   console.log("electronicsNames:", electronicsNames);
 
+
+//Produkter over 1000kr
   const hasProductOver1000 = products.some(function (product) {
     return product.price > 1000;
   });
     console.log("hasProductOver1000:", hasProductOver1000);
 
+
+//Regne ut totalprisen for alle produkter
 const totalPrice = products.reduce(function (accumulator, product) {
     return accumulator + product.price;
   }, 0);
