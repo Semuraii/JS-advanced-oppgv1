@@ -19,6 +19,6 @@ const products = [
   console.log("productNames:", productNames);
 
   const electronicsProducts = products.filter(function (product) {
-    return product.category === "electronics";
-    });
-    console.log("electronicsProducts:", electronicsProducts);
+    return product.category === "home appliances" || product.category === "clothing";
+  });
+  console.log("electronicsProducts:", electronicsProducts);
