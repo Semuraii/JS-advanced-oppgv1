@@ -22,3 +22,7 @@ const products = [
     return product.category === "electronics";
   });
   console.log("electronicsProducts:", electronicsProducts);
+
+  const electronicsNames = electronicsProducts.map(function (product) {
+    return product.name;
+  });
