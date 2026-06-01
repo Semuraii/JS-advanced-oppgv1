@@ -21,3 +21,4 @@ const products = [
   const electronicsProducts = products.filter(function (product) {
     return product.category === "electronics";
     });
+    console.log("electronicsProducts:", electronicsProducts);
