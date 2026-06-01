@@ -26,3 +26,4 @@ const products = [
   const electronicsNames = electronicsProducts.map(function (product) {
     return product.name;
   });
+  console.log("electronicsNames:", electronicsNames);
