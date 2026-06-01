@@ -27,3 +27,7 @@ const products = [
     return product.name;
   });
   console.log("electronicsNames:", electronicsNames);
+
+  const hasProductOver1000 = products.some(function (product) {
+    return product.price > 1000;
+  });
