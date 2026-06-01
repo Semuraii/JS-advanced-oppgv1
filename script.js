@@ -32,3 +32,7 @@ const products = [
     return product.price > 1000;
   });
     console.log("hasProductOver1000:", hasProductOver1000);
+
+const totalPrice = products.reduce(function (accumulator, product) {
+    return accumulator + product.price;
+  }, 0);
