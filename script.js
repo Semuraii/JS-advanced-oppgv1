@@ -15,4 +15,6 @@ const products = [
 
   const productNames = products.map(function (product) {
     return product.name;
-  }
+  });
+  console.log("productNames:", productNames);
+  
