@@ -31,3 +31,4 @@ const products = [
   const hasProductOver1000 = products.some(function (product) {
     return product.price > 1000;
   });
+    console.log("hasProductOver1000:", hasProductOver1000);
